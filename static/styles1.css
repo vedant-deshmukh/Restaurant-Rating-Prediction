@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+/* ------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 5%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 90px;
+    margin-left: -50px;
+    
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+}
+
+nav li a.active{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.995);
+    color: black;
+    border-radius: 5px;
+    transition: .5s;
+}
+nav li a:hover {
+    border: 3px solid rgba(255, 255, 255, 0.995);
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+
+.main {
+    text-align: center;
+}
+
+.main #head1 {
+    margin-top: 15px;
+    color: white;
+    font-size: 85px;
+    font-weight: 600;
+    text-align: left;
+    text-shadow:5px black;
+}
+
+.main #head2 {
+    color: white;
+    font-size: 78px;
+    font-weight: 500;
+    text-align: left;
+    text-shadow:5px black;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+
+.content #wel {
+    text-align: left;
+    font-size: 45px;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 8px;
+}
+
+.content #desc {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 15px;
+    margin-top: 12px;
+}
+
+.main #btn1 {
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    letter-spacing: .1em;
+    display: inline-block;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    z-index: 0;
+    transition: all .3s;
+}
+
+.main #btn1:hover {
+    transform: scale(1.2);
+    color: black;
+    background-color: white;
+
+}
+
+.hero #vid1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    aspect-ratio: 16/9;
+
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .hero #vid1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .hero #vid1 {
+        width:auto;
+        height: 100% 
+    }
+}
+
+
+footer {
+    width: 100%;
+    height: 7vh;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    font: black;
+}
+
+footer #end-text {
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}

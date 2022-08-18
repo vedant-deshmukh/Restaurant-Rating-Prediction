@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Rating Predictior</title>
+  <link rel="icon" href="../static/images/icon.png">
+  <link rel="stylesheet" href="../static/styles2.css">
+  <script type="text/javascript" src="../static/script.js"></script>
+</head>
+
+<body onload="addOptions()">
+
+
+  <div class="hero">
+    <video id="vid1" type="video/mp4" autoplay loop muted plays-inline>
+      <source src="../static/images/vid2.mp4">
+    </video>
+  </div>
+
+  <div class="main">
+    <nav>
+      <a href="index.html" class="disabled"><img src='../static/images/logo.png' alt='logo' class="logo"></a>
+
+      <ul>
+        <li><a href="/" target="_self">Home</a></li>
+        <li><a href="/predictor" target="_self" class="active">Predictor</a></li>
+        <li><a href="/aboutUs" target="_self">About Us</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="heading">
+      <h1 id="title1">Welcome to the Predictor</h1>
+      <p id="desc">Enter the details to get the Rating!</p>
+      <p id="note">NOTE: Hold down the Ctrl (windows) or Command (Mac) button to select multiple options in Restaurant Type and Cuisines. </p>
+    </div>
+
+    <div class="form1">
+      <h2 id="form-head">Predictor Form</h2>
+      <hr id="hr1">
+
+      <form action="/predictor" method="POST">
+        <div class="fields">
+
+          <div class="r1">
+            <!-- RESTAURANT TYPE-->
+            <Label for="RT" id="Rest-Type">Restaurant Type</Label>
+            <select name="rest_type" id="RT" required multiple>
+              <option value="null">Select-Rest-Type</option>
+            </select>
+
+            <!-- CUISINES -->
+            <Label for="C" id="Cuisines">Cuisines</Label>
+            <select name="cuisines" id="C" required multiple>
+              <option value="null">Select-Cuisines</option>
+            </select>
+          </div>
+
+          <div class="r2">
+            <!-- ONLINE ORDER -->
+            <Label for="OO" id="Online-Order">Online Order Facility</Label>
+            <select name="online_order" id="OO" required>
+              <option >-Select-</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+
+
+            <!-- BOOK TABLE -->
+            <Label for="BT" id="Book-Table">Book Table Facility</Label>
+            <select name="book_table" id="BT" required>
+              <option>-Select-</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="r3">
+            <!-- LOCATIONS -->
+            <Label for="L" id="Location">Location</Label>
+            <select name="location" id="L" required>
+              <option value="null">Select-Location</option>
+            </select>
+
+            <!-- COST FOR TWO PEOPLE -->
+            <Label for="AC" id="Cost">Cost For Two People</Label>
+            <input id="AC" type="number" name="approx_cost" min="300" placeholder="- Enter Cost -" required>
+          </div>
+
+          <div class="r4">
+            <!-- NUMBER OF VOTES -->
+            <Label for="V" id="Votes">No. of Votes</Label>
+            <input type="number" name="votes" id="V" min="1" placeholder="- Enter Votes -" required>
+          </div>
+
+        </div>
+
+        <div class="submit">
+          <button id="Submit" type="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- PREDICTOR WINDOW -->
+    <div class="pred">
+      <p id="pred-text">Expected Rating</p>
+      <hr id="hr2">
+      <p id="rating">{{prediction_text}}</p>
+    </div>
+    
+    <footer>
+      <p id="end-text">Created by Ritik Ratnawat | Vedant Deshmukh | Utkarsh Yeole • &#169 2022 </p>
+    </footer>
+
+  </div>
+
+
+
+</body>
+
+</html>

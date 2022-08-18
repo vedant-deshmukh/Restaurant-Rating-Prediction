@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+/* ------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    text-align: center;
+    justify-content:center;
+}
+
+
+.main {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+
+
+}
+
+
+.main nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 5%;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.logo {
+    width: 90px;
+    margin-left: -50px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+}
+
+nav li a.active {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.995);
+    color: black;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+nav li a:hover {
+    border: 3px solid rgba(255, 255, 255, 0.995);
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+
+h2{
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin-top: 13vh;
+    margin-bottom: 40px ;
+    font-family: 'Gantari', sans-serif;
+}
+
+.cards{
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 60px;
+    width: 90%;
+    height: 700px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.card1{
+    width: 30%;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+
+.card1:hover,.card2:hover,.card3:hover{
+    transform:translateY(-20px) scale(1.03);
+  
+}
+.card2{
+    width: 30%;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .4s;
+}
+.card3{
+    width: 30%;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(253, 253, 255);
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.card3 #U
+{
+    height: 210px;
+    margin-left: 25%;
+    
+}
+
+.card2 #V
+{
+    height: 210px;
+    margin-left: 25%;
+    
+}
+
+.card1 #R
+{
+    height: 205px;
+    margin-left: 25%;    
+}
+
+.card1 #head, .card2 #head, .card3 #head{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 550;
+
+}
+
+
+.card1 #desc, .card2 #desc, .card3 #desc{
+    margin: 30px 25px;
+    text-align: justify;
+}
+
+.card1 #sub, .card2 #sub, .card3 #sub{
+    text-align: center;
+    font-size : 21px;
+    color: rgb(33, 33, 38);
+    margin: 5px;
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.card1 #linkedin{
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45px;
+    margin-top: -10px;
+    font-size: 15px;
+    margin-left : 36%;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;    
+    transition: all .3s;
+
+}
+
+.card1 #linkedin:hover{
+    transform : scale(1.1);
+    background-color: #0e76a8;
+    color: white;
+    border:#0e76a8 2px solid;
+}
+
+.card2 #linkedin{
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45px;
+    margin-top: 14px;
+    font-size: 15px;
+    margin-left : 36%;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;    
+    transition: all .3s;
+
+}
+
+.card2 #linkedin:hover{
+    transform : scale(1.1);
+    background-color: #0e76a8;
+    color: white;
+    border:#0e76a8 2px solid;
+}
+
+.card3 #linkedin{
+    width: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 45px;
+    margin-top: 55px;
+    font-size: 15px;
+    margin-left : 37%;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;    
+    transition: all .3s;
+
+}
+
+.card3 #linkedin:hover{
+    transform : scale(1.1);
+    background-color: #0e76a8;
+    color: white;
+    border:#0e76a8 2px solid;
+}
+
+
+
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    font: black;
+   
+}
+
+footer #end-text {
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.hero #vid1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+@media(min-aspect-ratio : 16/9) {
+    .hero #vid1 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .hero #vid1 {
+        width: auto;
+        height: 100%;
+    }
+}
