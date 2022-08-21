@@ -1,7 +1,7 @@
 <h1> Restaurant Rating Prediction System </h1> <br>
 This is a project taken under the internship provided by Ineuron.ai.
 <br><br>
-Live Link :  <br>
+Live Link : https://restaurant-rating-ml-model.herokuapp.com/  <br>
 <br>
 Demo Video Link: https://youtu.be/ht8WFBb6POs 
 
@@ -39,5 +39,5 @@ The About us page holds a short summary about the people who have contributed in
  <img alt = "user_input.png" src = "https://github.com/vedant-deshmukh/Restaurant-Rating-Prediction/blob/9f550372a6af1e4566fc10a7145c53caf2719924/static/images/readme_imgs/userinput.png">
 <br>
 ## Output: <br>
-On the predictor page, the user provides all the asked information and then clicks on submit button. The predicted rating  of the restaurant is displayed to the user below the predictor form<br>
+On the predictor page, the user provides all the asked information and then clicks on submit button. The predicted rating  of the restaurant is displayed to the user below the predictor form <br><br>
 <img alt = "user_output.png" src = "https://github.com/vedant-deshmukh/Restaurant-Rating-Prediction/blob/9f550372a6af1e4566fc10a7145c53caf2719924/static/images/readme_imgs/useroutput.png">
