@@ -1,7 +1,7 @@
 <h1> Restaurant Rating Prediction System </h1> <br>
 This is a project taken under the internship provided by Ineuron.ai.
 <br><br>
-Live Link : https://restaurant-rating-ml-model.herokuapp.com/  <br>
+Live Link : http://vedantd27.pythonanywhere.com/<br>
 <br>
 Demo Video Link: https://youtu.be/ht8WFBb6POs 
 
